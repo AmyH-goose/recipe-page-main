@@ -1,0 +1,180 @@
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-stone-100: hsl(30, 54%, 90%);
+    --clr-stone-150: hsl(30, 18%, 87%);
+    --clr-stone-600: hsl(30, 10%, 34%);
+    --clr-stone-900: hsl(24, 5%, 18%);
+    --clr-brown-800: hsl(14, 45%, 36%);
+    --clr-rose-800: hsl(332, 51%, 32%);
+    --clr-rose-50: hsl(330, 100%, 98%);
+
+    --fw-base: 500;
+    --fw-bold: 800;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  .bold {
+    font-weight: var(--fw-bold);
+  }
+
+  .fc-brown {
+    color: var(--clr-brown-800);
+  }
+
+  .btm-line {
+    border-bottom: 1px solid var(--clr-stone-150);
+  }
+
+  body {
+    font-family: outfit, sans-serif;
+    color: var(--clr-stone-600);
+    font-weight: var(--fw-base);
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 1.5rem 0;
+}
+
+  h1,
+  h2 {
+    font-family: young-serif, serif;
+    color: var(--clr-brown-800);
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    margin: 1.5rem 0;
+  }
+
+  ul, 
+  ol {
+    padding-left: 1rem;
+  }
+
+  ul li, 
+  ol li {
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .recipe-card {
+    background-color: var(--clr-white);
+    border-radius: 22px;
+  }
+
+  .recipe-content {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: var(--clr-stone-900);
+    line-height: 1;
+  }
+
+  .recipe-prep-time {
+    color: var(--clr-rose-800);
+    background-color: var(--clr-rose-50);
+    padding: 1.5rem;
+    border-radius: 8px;
+  } 
+
+  .list-wrapper {
+    color: var(--clr-stone-600);
+  }
+
+ .nutrition-table {
+   width: 100%;
+   line-height: 2rem;
+   border-collapse: collapse;
+ }
+
+ .nutrition-table td {
+    padding: 0.5rem 2rem;
+ }
+
+ @media only screen and (min-width: 40rem){
+    body {
+        background-color: var(--clr-stone-100);
+    }
+
+    .recipe-card {
+        max-width: 500px;
+        margin: 5rem auto;
+        padding: 2rem;
+    }
+
+    .recipe-content {
+        padding: 0;
+    }
+
+    img {
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+
+    
+
+ }
+ 
+ 
+
+
+
+
+
+
